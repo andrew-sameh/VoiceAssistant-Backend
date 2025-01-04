@@ -1,0 +1,9 @@
+livekit-agents
+livekit-plugins-openai
+livekit-plugins-deepgram
+livekit-plugins-cartesia
+livekit-plugins-elevenlabs	
+livekit-plugins-silero
+python-dotenv
+requests
+aiohttp
