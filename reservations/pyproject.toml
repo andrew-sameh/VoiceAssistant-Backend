@@ -6,7 +6,7 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 fastapi = "^0.115.6"
 psycopg2-binary = "^2.9.10"
 pydantic = "^2.10.4"
@@ -14,8 +14,21 @@ python-dotenv = "^1.0.1"
 sqlalchemy = "^2.0.36"
 uvicorn = "^0.34.0"
 gunicorn = "^23.0.0"
+langchain = "^0.3.14"
+langchain-core = "^0.3.29"
+langchain-community = "^0.3.14"
+langchain-text-splitters = "^0.3.4"
+langchain-pinecone = "^0.2.0"
+langchain-openai = "^0.2.14"
+pinecone-client = "^5.0.1"
+openai = "^1.59.3"
+pypdf = "^5.1.0"
+python-multipart = "^0.0.20"
+docx2txt = "^0.8"
+unstructured = "^0.16.12"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+

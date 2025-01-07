@@ -7,3 +7,15 @@ SQLAlchemy==2.0.32
 # SQLAlchemy-Utils==0.41.2
 uvicorn==0.24.0.post1
 gunicon==23.0.0
+langchain==0.3.14
+langchain-core==0.3.29
+langchain-pinecone==0.2.0
+langchain-openai==0.2.14
+langchain-community==0.3.14
+langchain-text-splitters==0.3.4
+pinecone-client==5.0.1
+openai==1.59.3
+pypdf==5.1.0
+python-multipart==0.0.20
+docx2txt==0.8
+unstructured==0.16.12

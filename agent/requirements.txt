@@ -7,3 +7,5 @@ livekit-plugins-silero
 python-dotenv
 requests
 aiohttp
+pinecone[grpc]
+openai
