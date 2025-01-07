@@ -245,8 +245,8 @@ async def entrypoint(ctx: JobContext):
     await ctx.connect(auto_subscribe=AutoSubscribe.AUDIO_ONLY)
     participant = await ctx.wait_for_participant()
 
-    metadata = json.loads(participant.metadata)
-    config = parse_session_config(metadata)
+    metadata = participant.metadata or "{}"
+    config = parse_session_config(json.loads(metadata))
     namespace = config.namespace
     fnc_ctx = RAGFnc(namespace) if config.mode == "rag" and namespace else AssistantFnc()
 
