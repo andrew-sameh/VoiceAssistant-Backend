@@ -6,7 +6,7 @@ python-dotenv==1.0.1
 SQLAlchemy==2.0.32
 # SQLAlchemy-Utils==0.41.2
 uvicorn==0.24.0.post1
-gunicon==23.0.0
+gunicorn==23.0.0
 langchain==0.3.14
 langchain-core==0.3.29
 langchain-pinecone==0.2.0
