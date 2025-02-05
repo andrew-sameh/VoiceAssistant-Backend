@@ -1,5 +1,17 @@
 version: "3.9"
 services:
+  web:
+    build: .
+    command: uvicorn main:app --host 0.0.0.0 --port 8080
+    volumes:
+      - .:/app
+    ports:
+      - 8008:8080
+    depends_on:
+      - db
+    env_file: .env
+    networks:
+      - backend
   db:
     image: bitnami/postgresql
     container_name: postgres_reservations
@@ -14,6 +26,12 @@ services:
       - 5432
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
 
 volumes:
   postgres_data:
